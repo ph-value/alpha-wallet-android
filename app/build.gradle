@@ -318,11 +318,11 @@ dependencies {
 
     // E2e tests
     androidTestImplementation 'androidx.test:runner:1.4.0'
-    androidTestImplementation 'androidx.test:core:1.4.0'
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+    androidTestImplementation 'androidx.test:core:1.4.1-alpha02'
     androidTestUtil 'androidx.test:orchestrator:1.4.1'
-    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.2', {
-        exclude group: "com.android.support", module: "support-annotations"
-    })
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
     androidTestImplementation('tools.fastlane:screengrab:2.1.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
